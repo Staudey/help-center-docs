@@ -112,6 +112,7 @@ If it is **not** in your Downloads folder, use `cd` to navigate to the correct d
 :::danger
 This is where we overwrite the contents of your USB drive so please ensure you identified the correct drive in the `lsblk` stage above. Selecting the wrong drive here will lead to its contents being overwritten. An example command is below, however you may need to replace `sdb` with the drive we located above:
 :::
+
 ```bash
 sudo dd if=Solus-4.4-Budgie.iso of=/dev/sdb bs=4M status=progress oflag=sync && sudo eject /dev/sdb
 ```
@@ -213,6 +214,7 @@ Now navigate to the folder that has the downloaded ISO. This could be your Macâ€
 ```bash
 cd ~/Downloads
 ```
+
 :::danger
 **This next step is dangerous. Using the wrong drive identifier could result in data loss.**
 :::

@@ -164,7 +164,6 @@ const config = {
                 label: "Issue Tracker",
                 href: "https://issues.getsol.us",
               },
-              
             ],
           },
         ],
