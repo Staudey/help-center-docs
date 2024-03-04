@@ -46,8 +46,10 @@ This page is meant to serve as a changelog of sorts for the Solus packaging envi
 
 #### Switch to asterisk bolding for PR template
 
-- The initial PR template for the `packages` repository used markdown header styling (`## Heading text`), but `solus-sc` does not render that styling, so the template was changed to asterisk bolding (`**Heading text**`)
-- https://github.com/getsolus/packages/pull/366
+- The initial PR template for the `packages` repository used markdown header styling (`## Heading text`), but `solus-sc` does not render that styling, so the template was changed to asterisk bolding (`**Heading text**`).
+- Corresponding pull request: https://github.com/getsolus/packages/pull/366
+- Packagers should no longer use `git commit --cleanup=scissors`, as this is not necessary anymore and will lead to the unintended inclusion of comments into the commit message.
+- Packagers should use a plain `git commit` instead.
 
 #### Switching From `make` to `go-task`
 
